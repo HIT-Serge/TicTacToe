@@ -1,0 +1,100 @@
+body {
+    background-color:black;
+}
+button {
+    margin: auto;
+}
+
+h1 {
+    color: greenyellow;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+footer {
+    text-align: center;
+    margin: auto;
+    color: yellow;
+    font-family: arial;
+    font-size: x-large;
+}
+#canvas {
+    margin: auto;
+    border-collapse: collapse;
+}
+
+#canvas td {
+    border: 1px solid white;
+    width: 100px;
+    height: 100px;
+}
+
+#canvas td:first-child {
+    border-left: none;
+}
+
+#canvas td:last-child {
+    border-right: none;
+}
+
+#canvas tr:first-child td {
+    border-top: none;
+}
+
+#canvas tr:last-child td {
+    border-bottom: none;
+}
+
+.blink-image {
+    -moz-animation: blink normal 2s infinite ease-in-out; /* Firefox */
+    -webkit-animation: blink normal 2s infinite ease-in-out; /* Webkit */
+    -ms-animation: blink normal 2s infinite ease-in-out; /* IE */
+    animation: blink normal 2s infinite ease-in-out; /* Opera and prob css3 final iteration */
+}
+ 
+@-moz-keyframes blink {
+    0% {
+        opacity:1;
+    }
+    50% {
+        opacity:0;
+    }
+    100% {
+        opacity:1;
+    }
+} 
+ 
+@-webkit-keyframes blink {
+    0% {
+        opacity:1;
+    }
+    50% {
+        opacity:0;
+    }
+    100% {
+        opacity:1;
+    }
+}
+/* IE */
+@-ms-keyframes blink {
+    0% {
+        opacity:1;
+    }
+    50% {
+        opacity:0;
+    }
+    100% {
+        opacity:1;
+    }
+} 
+/* Opera and prob css3 final iteration */
+@keyframes blink {
+    0% {
+        opacity:1;
+    }
+    50% {
+        opacity:0;
+    }
+    100% {
+        opacity:1;
+    }
+} 
